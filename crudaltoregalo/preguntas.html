@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://kit.fontawesome.com/7bfc0f7394.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="altoregalo.css">
+    <link rel="stylesheet" href="preguntas.css">
+
+    <link rel="icon" type="icon/png" href="img/favicon-32x32.png">
+
+    <title>Alto regalo</title>
+
+</head>
+
+<body>
+
+    <header>
+
+        <div class="container-encabezado">
+
+            <div class="logo">
+                <h1>ALTO<span>R</span>EGALO</h1>
+            </div>
+
+            <div class="container-user">
+                <i class="fa-solid fa-user"></i>
+                <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+        </div>
+
+        <div class="container-nav">
+
+            <form class="search-form">
+                <input type="search" placeholder="Masajes, cenas..." />
+                <button class="btn-search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </form>
+
+
+            <button id="abrir" class="abrir"><i class="fa-solid fa-bars"></i>
+            </button>
+
+
+            <nav id="nav" class="nav">
+                
+                <ul class="nav_list">
+                    <li><a href="./index.html">Inicio</a></li>
+                    <li><a href="./index.html#comofunciona">¿Cómo funciona?</a></li>
+                    <li><a href="index.html#destacados">Destacados</a></li>
+                    <li><a href="./index.html#descuentos">Descuentos</a></li>
+                    <li><a href="./index.html#nosotros">Nosotros</a></li>
+                </ul>
+                <button id="cerrar" class="cerrar"><i class="bi bi-x-lg"></i></button>
+            </nav>
+        </div>
+
+    </header>
+
+    <main>
+        <h1 class="titulo">Preguntas Frecuentes</h1>
+		<div class="categorias" id="categorias">
+			<div class="categoria activa" data-categoria="metodos-pago">
+                <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M21.19 7h2.81v15h-21v-5h-2.81v-15h21v5zm1.81 1h-19v13h19v-13zm-9.5 1c3.036 0 5.5 2.464 5.5 5.5s-2.464 5.5-5.5 5.5-5.5-2.464-5.5-5.5 2.464-5.5 5.5-5.5zm0 1c2.484 0 4.5 2.016 4.5 4.5s-2.016 4.5-4.5 4.5-4.5-2.016-4.5-4.5 2.016-4.5 4.5-4.5zm.5 8h-1v-.804c-.767-.16-1.478-.689-1.478-1.704h1.022c0 .591.326.886.978.886.817 0 1.327-.915-.167-1.439-.768-.27-1.68-.676-1.68-1.693 0-.796.573-1.297 1.325-1.448v-.798h1v.806c.704.161 1.313.673 1.313 1.598h-1.018c0-.788-.727-.776-.815-.776-.55 0-.787.291-.787.622 0 .247.134.497.957.768 1.056.344 1.663.845 1.663 1.746 0 .651-.376 1.288-1.313 1.448v.788zm6.19-11v-4h-19v13h1.81v-9h17.19z"/></svg>
+				<p>Métodos de pago</p>
+			</div>
+			<div class="categoria" data-categoria="entregas">
+				<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M7 24h-5v-9h5v1.735c.638-.198 1.322-.495 1.765-.689.642-.28 1.259-.417 1.887-.417 1.214 0 2.205.499 4.303 1.205.64.214 1.076.716 1.175 1.306 1.124-.863 2.92-2.257 2.937-2.27.357-.284.773-.434 1.2-.434.952 0 1.751.763 1.751 1.708 0 .49-.219.977-.627 1.356-1.378 1.28-2.445 2.233-3.387 3.074-.56.501-1.066.952-1.548 1.393-.749.687-1.518 1.006-2.421 1.006-.405 0-.832-.065-1.308-.2-2.773-.783-4.484-1.036-5.727-1.105v1.332zm-1-8h-3v7h3v-7zm1 5.664c2.092.118 4.405.696 5.999 1.147.817.231 1.761.354 2.782-.581 1.279-1.172 2.722-2.413 4.929-4.463.824-.765-.178-1.783-1.022-1.113 0 0-2.961 2.299-3.689 2.843-.379.285-.695.519-1.148.519-.107 0-.223-.013-.349-.042-.655-.151-1.883-.425-2.755-.701-.575-.183-.371-.993.268-.858.447.093 1.594.35 2.201.52 1.017.281 1.276-.867.422-1.152-.562-.19-.537-.198-1.889-.665-1.301-.451-2.214-.753-3.585-.156-.639.278-1.432.616-2.164.814v3.888zm3.79-19.913l3.21-1.751 7 3.86v7.677l-7 3.735-7-3.735v-7.719l3.784-2.064.002-.005.004.002zm2.71 6.015l-5.5-2.864v6.035l5.5 2.935v-6.106zm1 .001v6.105l5.5-2.935v-6l-5.5 2.83zm1.77-2.035l-5.47-2.848-2.202 1.202 5.404 2.813 2.268-1.167zm-4.412-3.425l5.501 2.864 2.042-1.051-5.404-2.979-2.139 1.166z"/></svg>
+				<p>Entregas</p>
+			</div>
+			<div class="categoria" data-categoria="seguridad">
+				<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M12 0c-3.371 2.866-5.484 3-9 3v11.535c0 4.603 3.203 5.804 9 9.465 5.797-3.661 9-4.862 9-9.465v-11.535c-3.516 0-5.629-.134-9-3zm0 1.292c2.942 2.31 5.12 2.655 8 2.701v10.542c0 3.891-2.638 4.943-8 8.284-5.375-3.35-8-4.414-8-8.284v-10.542c2.88-.046 5.058-.391 8-2.701zm5 7.739l-5.992 6.623-3.672-3.931.701-.683 3.008 3.184 5.227-5.878.728.685z"/></svg>
+				<p>Seguridad</p>
+			</div>
+			<div class="categoria" data-categoria="cuenta">
+				<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M9.484 15.696l-.711-.696-2.552 2.607-1.539-1.452-.698.709 2.25 2.136 3.25-3.304zm0-5l-.711-.696-2.552 2.607-1.539-1.452-.698.709 2.25 2.136 3.25-3.304zm0-5l-.711-.696-2.552 2.607-1.539-1.452-.698.709 2.25 2.136 3.25-3.304zm10.516 11.304h-8v1h8v-1zm0-5h-8v1h8v-1zm0-5h-8v1h8v-1zm4-5h-24v20h24v-20zm-1 19h-22v-18h22v18z"/></svg>
+				<p>Cuenta</p>
+			</div>
+		</div>
+
+		<div class="preguntas">
+
+			<!-- Preguntas Metodos de pago -->
+			<div class="contenedor-preguntas activo" data-categoria="metodos-pago">
+				<div class="contenedor-pregunta">
+					<p class="pregunta">¿Que metodos de pago disponibles tienen?<Yo class="fa-solid fa-plus"></Yo> </p>
+					<p class="respuesta">Podés pagar con tarjeta de crédito, Mercado Pago y Ulala. 
+                    Con tu tarjeta Visa y Master Card podés pagar en 6 cuotas sin interes
+                    Su pedido será procesado y enviado tras la confirmación del pago. </p>
+                </div>
+            </div>
+				
+
+			<!-- Preguntas Entregas -->
+			<div class="contenedor-preguntas" data-categoria="entregas">
+				<div class="contenedor-pregunta">
+					<p class="pregunta">¿Cómo envio mi regalo? <Yo class="fa-solid fa-plus"></Yo></p>
+					<p class="respuesta"> Recibiras un voucher que se le podras envíar a tu agasajado través de su email o whatsapp. 
+               </p>
+				</div>
+            </div>
+		
+			<!-- Preguntas Seguridad -->
+			<div class="contenedor-preguntas" data-categoria="seguridad">
+				<div class="contenedor-pregunta">
+					<p class="pregunta">Politicas de Privacidad <Yo class="fa-solid fa-plus"></Yo></p>
+					<p class="respuesta">El destinatario de datos personales es Alto Regalo y sus empresas afiliadas.
+                    Alto Regalo recaba información de identificación personal de los Usuarios durante el proceso de registración o en respuesta a ciertos requerimientos.
+                    Alto Regalo también podrá recabar la dirección de IP del Usuario para ayudar a diagnosticar problemas con nuestro servidor, y para administrar el sitio. Alto Regalo mantiene un seguimiento de las direcciones IP de los hosts con fines de administración y seguridad del sistema. También monitorea el tráfico de la página guardando registros de las vistas de la página que nos permite planear crecimiento (por ejemplo, agregando nuevos servidores).
+                    La negativa del Usuario a proporcionar sus datos personales generará la imposibilidad de registrarse como Usuario y, en ocasiones, de utilizar el sitio web de Alto Regalo.
+                        
+                      
+                    </p>
+				</div>
+				<div class="contenedor-pregunta">
+					<p class="pregunta">¿Que pasa con mis datos personales? <Yo class="fa-solid fa-plus"></Yo></p>
+					<p class="respuesta">Alto Regalo y las personas que intervengan en cualquier fase del tratamiento de datos personales están obligadas al secreto profesional respecto de los mismos.
+                    Tal obligación subsiste aún después de finalizada la relación laboral con Alto Regalo. </p>
+			    </div>
+            </div>
+
+			<!-- Preguntas Cuenta -->
+			<div class="contenedor-preguntas" data-categoria="cuenta">
+				<div class="contenedor-pregunta">
+					<p class="pregunta">¿Como puedo acceder a mis pedidos? <Yo class="fa-solid fa-plus"></Yo></p>
+					<p class="respuesta">Podes accedder al historial de tus pedidos en el apartado “Mi cuenta”. Ir a los detalles del pedido y dar click en el número de pedido en la columna "Detalles". 
+                    Aquí podrás acceder al sitio web del transportista, donde podrás encontrar la información más actualizada. 
+
+                    </p>
+				</div>
+				<div class="contenedor-pregunta">
+					<p class="pregunta">Olivide mi contraseña ¿Como puedo recuperarla? <Yo class="fa-solid fa-plus"></Yo></p>
+					<p class="respuesta"> Si olvidaste tu contraseña, no te preocupes, 
+                    la podes restablecer ingresando a MiCuenta.
+			</div>
+
+
+
+
+		</div>
+
+
+    </main>
+    <footer class="footer">
+
+        <div class="container">
+
+            <div class="footer-row">
+
+                <div class="footer-links">
+                  
+                    <h4>Alto <span>R</span>egalo</h4>
+
+                    <p>Nacimos para cumplir tus sueños <br> y hacer posibles todas <br>
+                        <span>las aventuras que imaginaste.</span>
+                    </p>
+
+                </div>
+
+                    <div class="footer-links">
+                        <h4>Canales de atención</h4>
+                        <ul>
+                        <li> <a href="#"><span><i class="fa-solid fa-headset"></i></span>0800-000-0000</a> </li>
+                        <li> <a href="#">Todos los dias</a></li>
+                        </ul>
+                
+                   </div>
+                      
+
+                <div class="footer-links">
+                    <h4>Ayuda</h4>
+                    <ul>
+                        
+                        <li> <a href="./preguntas.html">Preguntas Frecuentes</a></li>
+                        <li> <a href="index.html#descuentos">Newsletter</a></li>
+                       
+                    </ul>
+               </div>
+
+                <div class="footer-links">
+                    <h4>Mi cuenta</h4>
+                    <ul>
+                        <li> <a href="#destacados">Mis perfil</a></li>
+                        <li> <a href="#destacados">Mis experiencias</a></li>
+                        <li> <a href="#destacados">Pasaporte Alto Regalo</a></li>
+                        <li> <a href="#destacados">Cátalogo canje productos</a></li>
+                        
+                        
+                    </ul>
+
+                </div>
+
+                <div class="footer-links">
+                    <h4>Seguinos</h4>
+                    <div class="social-link">
+                        <a href="https://es-la.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZXMifQ%3D%3D%22%7D"
+                            target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a>
+                        <a href="https://www.linkedin.com/login/es" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                    <br>
+                    <p class="footer-name">Copyright © 2023 <strong>Alto Regalo</strong> All rights reserved</p>
+                </div>
+
+            </div>
+
+        </div> 
+
+        
+
+
+    </footer>
+
+
+
+
+
+
+    <script src="js/altoregalo.js"></script>
+    <script src="js/preguntas.js"></script>
+    
+</body>
